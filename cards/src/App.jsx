@@ -13,13 +13,13 @@ import justdanceImg from './assets/imgs/jusdance.jpg';
 import lifeisstrangeImg from './assets/imgs/lifeisstrange.jpeg';
 
 function App() {
-  const jogos = [
+  const Fundamentos = [
     {
       id: 1,
       titulo: 'O que é React',
       conteudo: 'React é uma biblioteca JS para criar interfaces.',
       exemplo: 'Exemplo de uso',
-      codigo: ";",
+      codigo: "",
       capa: stardewImg
     },
     {
@@ -62,22 +62,7 @@ function App() {
       codigo: 'COD006',
       capa: hogwartsImg
     },
-    {
-      id: 7,
-      titulo: 'Just Dance 2024',
-      conteudo: 'Dança / Música',
-      exemplo: '179.90',
-      codigo: 'COD007',
-      capa: justdanceImg
-    },
-    {
-      id: 8,
-      titulo: 'Life is Strange',
-      conteudo: 'Aventura / História',
-      exemplo: '79.90',
-      codigo: 'COD008',
-      capa: lifeisstrangeImg
-    }
+
   ];
 
 
@@ -89,16 +74,33 @@ function App() {
       </header>
 
       <main className="app-main">
+        
+      <div id="informacoes">
+        <div id='info'>
+          <h1>
+            INFO:
+          </h1>
+        </div>
+        <div id='frase1'>
+          <h1>
+            Este espaço funciona como um guia rápido e objetivo para apoiar seus <br />estudos e reforçar os fundamentos do React.
+          </h1>
+        </div>
+      </div>
 
-        <section className="jogos-grid">
-          {jogos.map(jogo => (
+        <div id="fundamentos">
+          <h1>FUNDAMENTOS</h1>
+        </div>
+
+        <section className="Fundamentos-grid">
+          {Fundamentos.map(Fundamento => (
             <CardJogo
-              key={jogo.id}
-              capa={jogo.capa}
-              titulo={jogo.titulo}
-              conteudo={jogo.conteudo}
-              exemplo={jogo.exemplo}
-              codigo={jogo.codigo}
+              key={Fundamento.id}
+              capa={Fundamento.capa}
+              titulo={Fundamento.titulo}
+              conteudo={Fundamento.conteudo}
+              exemplo={Fundamento.exemplo}
+              codigo={Fundamento.codigo}
             />
           ))}
         </section>
