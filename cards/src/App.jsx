@@ -83,10 +83,11 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>MAKAL STORE</h1>
+        <h1>CARDS MAKAL</h1>
       </header>
 
       <main className="app-main">
+
         <section className="jogos-grid">
           {jogos.map(jogo => (
             <CardJogo
@@ -102,7 +103,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>© 2024 Makal Store - Todos os direitos reservados</p>
+        <p>© 2024 Cards Makal - Todos os direitos reservados</p>
       </footer>
     </div>
   );
