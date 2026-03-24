@@ -1,121 +1,116 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react';
+import CardJogo from './components/CardJogo/CardJogo';
+import './App.css';
+
+// Importando todas as imagens
+import stardewImg from './assets/imgs/stardew.jpg';
+import simsImg from './assets/imgs/the sims.jpeg';
+import animalcrossingImg from './assets/imgs/animal crossinf.jpg';
+import overcookedImg from './assets/imgs/overcooked.jpeg'; 
+import unpackingImg from './assets/imgs/unpacking.jpeg';
+import hogwartsImg from './assets/imgs/hogwarts legacy.jpeg';
+import justdanceImg from './assets/imgs/jusdance.jpg';
+import lifeisstrangeImg from './assets/imgs/lifeisstrange.jpeg';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const jogos = [
+    {
+      id: 1,
+      titulo: 'Stardew Valley',
+      genero: 'Simulação / Fazenda',
+      preco: 24.90,
+      capa: stardewImg,
+      onSale: false
+    },
+    {
+      id: 2,
+      titulo: 'The Sims 4',
+      genero: 'Simulação de Vida',
+      preco: 0.00,
+      capa: simsImg,
+      onSale: false
+    },
+    {
+      id: 3,
+      titulo: 'Animal Crossing',
+      genero: 'Simulação / Casual',
+      preco: 199.90,
+      precoOriginal: 299.90,
+      capa: animalcrossingImg,
+      onSale: true
+    },
+    {
+      id: 4,
+      titulo: 'Overcooked 2',
+      genero: 'Cooperativo / Party Game',
+      preco: 49.90,
+      capa: overcookedImg,
+      onSale: false
+    },
+    {
+      id: 5,
+      titulo: 'Unpacking',
+      genero: 'Puzzle / Relaxante',
+      preco: 59.90,
+      precoOriginal: 99.90,
+      capa: unpackingImg,
+      onSale: true
+    },
+    {
+      id: 6,
+      titulo: 'Hogwarts Legacy',
+      genero: 'RPG / Mundo Aberto',
+      preco: 149.90,
+      precoOriginal: 299.90,
+      capa: hogwartsImg,
+      onSale: true
+    },
+    {
+      id: 7,
+      titulo: 'Just Dance 2024',
+      genero: 'Dança / Música',
+      preco: 179.90,
+      capa: justdanceImg,
+      onSale: false
+    },
+    {
+      id: 8,
+      titulo: 'Life is Strange',
+      genero: 'Aventura / História',
+      preco: 79.90,
+      precoOriginal: 159.90,
+      capa: lifeisstrangeImg,
+      onSale: true
+    }
+  ];
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="app">
+      <header className="app-header">
+        <h1>MAKAL STORE</h1>
+      </header>
 
-      <div className="ticks"></div>
+      <main className="app-main">
+        <section className="jogos-grid">
+          {jogos.map(jogo => (
+            <CardJogo
+              key={jogo.id}
+              capa={jogo.capa}
+              titulo={jogo.titulo}
+              genero={jogo.genero}
+              preco={jogo.preco}
+              precoOriginal={jogo.precoOriginal}
+              onSale={jogo.onSale}
+            />
+          ))}
+        </section>
+      </main>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+      <footer className="app-footer">
+        <p>© 2024 Makal Store - Todos os direitos reservados</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
