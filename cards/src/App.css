@@ -46,25 +46,6 @@ body {
   letter-spacing: 0cm;
 }
 
-#informacoes {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  color: rgb(255, 170, 0);
-  padding-bottom: 40px;
-}
-
-#frase1 {
-  font-size: 80px;
-  text-align: center;
-  color: rgb(255, 170, 0);
-}
-
-#frase2 {
-  font-size: 40px;
-  text-align: center;
-  color: rgb(255, 170, 0);
-}
 
 .app-main {
   flex: 1;

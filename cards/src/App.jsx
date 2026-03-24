@@ -92,20 +92,6 @@ function App() {
 
       <main className="app-main">
 
-          <h1 id='frase1'>informações</h1>
-          <h1 id='frase2'>Em cada card existe uma cor...</h1>
-          
-
-
-        <div id="informacoes">
-          <div>
-            <h1>💗Rosa = Fundamentos <br />🧡Laranja = JSX <br />💛Amarelo = Componentes <br />💚Verde = Props</h1>
-          </div>
-          <div>
-            <h1>💙Azul= Estado(State)<br />💜Roxo= Renderização <br />❤️Vermelho= Hooks <br />🖤Preto= Conceitos extras</h1>
-          </div>
-        </div>
-
         <section className="jogos-grid">
           {jogos.map(jogo => (
             <CardJogo
