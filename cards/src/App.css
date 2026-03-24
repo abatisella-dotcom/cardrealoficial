@@ -167,7 +167,7 @@ body {
 #router {
   color: rgb(255, 255, 255);
    font-family: "Anton SC", sans-serif;
-   background-color: #4e45f6;
+   background-color: #f6e745;
    text-align: center;
    height: 100px;
    width: 100%;
@@ -207,7 +207,7 @@ body {
 #props {
   color: rgb(255, 255, 255);
    font-family: "Anton SC", sans-serif;
-   background-color: #F64545;
+   background-color: #94F645;
    text-align: center;
    height: 100px;
    width: 100%;
@@ -227,7 +227,7 @@ body {
 #state {
   color: rgb(255, 255, 255);
    font-family: "Anton SC", sans-serif;
-   background-color: #F64545;
+   background-color: #45A3F6;
    text-align: center;
    height: 100px;
    width: 100%;
@@ -247,7 +247,7 @@ body {
 #Conceitosextras {
   color: rgb(255, 255, 255);
    font-family: "Anton SC", sans-serif;
-   background-color: #F64545;
+   background-color: #45F6EA;
    text-align: center;
    height: 100px;
    width: 100%;
