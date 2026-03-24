@@ -19,7 +19,7 @@ function App() {
       titulo: 'O que é React',
       conteudo: 'React é uma biblioteca JS para criar interfaces.',
       exemplo: 'Exemplo de uso',
-      codigo: ";",
+      codigo: "",
       capa: stardewImg
     },
     {
