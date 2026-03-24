@@ -16,71 +16,67 @@ function App() {
   const jogos = [
     {
       id: 1,
-      titulo: 'Stardew Valley',
-      genero: 'Simulação / Fazenda',
-      preco: 24.90,
-      capa: stardewImg,
-      onSale: false
+      titulo: 'O que é React',
+      conteudo: 'React é uma biblioteca JS para criar interfaces.',
+      exemplo: 'Exemplo de uso',
+      codigo: ";",
+      capa: stardewImg
     },
     {
       id: 2,
       titulo: 'The Sims 4',
-      genero: 'Simulação de Vida',
-      preco: 0.00,
-      capa: simsImg,
-      onSale: false
+      conteudo: 'Simulação de Vida',
+      exemplo: 'Gratuito',
+      codigo: 'COD002',
+      capa: simsImg
     },
     {
       id: 3,
       titulo: 'Animal Crossing',
-      genero: 'Simulação / Casual',
-      preco: 199.90,
-      precoOriginal: 299.90,
-      capa: animalcrossingImg,
-      onSale: true
+      conteudo: 'Simulação / Casual',
+      exemplo: '199.90',
+      codigo: 'COD003',
+      capa: animalcrossingImg
     },
     {
       id: 4,
       titulo: 'Overcooked 2',
-      genero: 'Cooperativo / Party Game',
-      preco: 49.90,
-      capa: overcookedImg,
-      onSale: false
+      conteudo: 'Cooperativo / Party Game',
+      exemplo: '49.90',
+      codigo: 'COD004',
+      capa: overcookedImg
     },
     {
       id: 5,
       titulo: 'Unpacking',
-      genero: 'Puzzle / Relaxante',
-      preco: 59.90,
-      precoOriginal: 99.90,
-      capa: unpackingImg,
-      onSale: true
+      conteudo: 'Puzzle / Relaxante',
+      exemplo: '59.90',
+      codigo: 'COD005',
+      capa: unpackingImg
     },
     {
       id: 6,
       titulo: 'Hogwarts Legacy',
-      genero: 'RPG / Mundo Aberto',
-      preco: 149.90,
-      precoOriginal: 299.90,
-      capa: hogwartsImg,
-      onSale: true
+      conteudo: 'RPG / Mundo Aberto',
+      exemplo: '149.90',
+      codigo: 'COD006',
+      capa: hogwartsImg
     },
     {
       id: 7,
       titulo: 'Just Dance 2024',
-      genero: 'Dança / Música',
-      preco: 179.90,
-      capa: justdanceImg,
-      onSale: false
+      conteudo: 'Dança / Música',
+      exemplo: '179.90',
+      codigo: 'COD007',
+      capa: justdanceImg
     },
     {
       id: 8,
       titulo: 'Life is Strange',
-      genero: 'Aventura / História',
-      preco: 79.90,
-      precoOriginal: 159.90,
-      capa: lifeisstrangeImg,
-      onSale: true
+      conteudo: 'Aventura / História',
+      exemplo: '79.90',
+      codigo: 'COD008',
+      capa: lifeisstrangeImg
     }
   ];
 
@@ -98,10 +94,9 @@ function App() {
               key={jogo.id}
               capa={jogo.capa}
               titulo={jogo.titulo}
-              genero={jogo.genero}
-              preco={jogo.preco}
-              precoOriginal={jogo.precoOriginal}
-              onSale={jogo.onSale}
+              conteudo={jogo.conteudo}
+              exemplo={jogo.exemplo}
+              codigo={jogo.codigo}
             />
           ))}
         </section>
