@@ -17,7 +17,7 @@ const CardJogo = ({
         <h3 className="card-titulo">{titulo}</h3>
         <p className="card-conteudo">{conteudo}</p>
         <p className="card-exemplo">{exemplo}</p>
-        <p className="card-codigo">Código: {codigo}</p>
+        <p className="card-codigo">{codigo}</p>
       </div>
       <div className="card-imagem-container">
         <img 

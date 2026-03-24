@@ -14,7 +14,10 @@ import lifeisstrangeImg from './assets/imgs/lifeisstrange.jpeg';
 
 function App() {
   const Fundamentos = [
-    { id: 1, titulo: 'O que é React', conteudo: 'React é uma biblioteca JS para criar interfaces.', exemplo: 'Exemplo de uso', codigo: "", capa: stardewImg },
+    { id: 1, titulo: 'O que é React', 
+      conteudo: 'React é uma biblioteca JS para criar interfaces.', 
+      codigo: "", 
+      capa: stardewImg },
     { id: 2, titulo: 'The Sims 4', conteudo: 'Simulação de Vida', exemplo: 'Gratuito', codigo: 'COD002', capa: simsImg },
     { id: 3, titulo: 'Animal Crossing', conteudo: 'Simulação / Casual', exemplo: '199.90', codigo: 'COD003', capa: animalcrossingImg },
     { id: 4, titulo: 'Overcooked 2', conteudo: 'Cooperativo / Party Game', exemplo: '49.90', codigo: 'COD004', capa: overcookedImg },
