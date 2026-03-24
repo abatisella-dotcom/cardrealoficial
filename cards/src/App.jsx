@@ -87,24 +87,10 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>CARD´S MAKAL</h1>
+        <h1>CARDS MAKAL</h1>
       </header>
 
       <main className="app-main">
-
-          <h1 id='frase1'>informações</h1>
-          <h1 id='frase2'>Em cada card existe uma cor...</h1>
-          
-
-
-        <div id="informacoes">
-          <div>
-            <h1>💗Rosa = Fundamentos <br />🧡Laranja = JSX <br />💛Amarelo = Componentes <br />💚Verde = Props</h1>
-          </div>
-          <div>
-            <h1>💙Azul= Estado(State)<br />💜Roxo= Renderização <br />❤️Vermelho= Hooks <br />🖤Preto= Conceitos extras</h1>
-          </div>
-        </div>
 
         <section className="jogos-grid">
           {jogos.map(jogo => (
@@ -122,7 +108,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>© 2024 Card´s Makal - Todos os direitos reservados</p>
+        <p>© 2024 Cards Makal - Todos os direitos reservados</p>
       </footer>
     </div>
   );
