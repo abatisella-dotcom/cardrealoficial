@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -204,7 +204,65 @@ body {
   position: relative;
 }
 
+#props {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #F64545;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
 
+.Props-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+#state {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #F64545;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.State-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+#Conceitosextras {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #F64545;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.Conceitoextras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
 
 .app-footer {
   text-align: center;
