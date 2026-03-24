@@ -19,7 +19,7 @@ function App() {
       titulo: 'O que é React',
       conteudo: 'React é uma biblioteca JS para criar interfaces.',
       exemplo: 'Exemplo de uso',
-      codigo: "",
+      codigo: ";",
       capa: stardewImg
     },
     {
@@ -65,8 +65,6 @@ function App() {
 
   ];
 
-
-  
   return (
     <div className="app">
       <header className="app-header">
@@ -110,7 +108,6 @@ function App() {
         <p>© 2024 Cards Makal - Todos os direitos reservados</p>
       </footer>
     </div>
-    
   );
 }
 
