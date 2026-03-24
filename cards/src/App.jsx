@@ -23,18 +23,26 @@ function App() {
   ];
 
   const JSX = [
-    { id: 1, titulo: 'JSX Básico', conteudo: 'Sintaxe parecida com HTML dentro do JS.', exemplo: '<h1>Hello World</h1>', codigo: 'JSX001', capa: justdanceImg },
-    { id: 2, titulo: 'Expressões', conteudo: 'Permite usar variáveis dentro do JSX.', exemplo: '{nome}', codigo: 'JSX002', capa: lifeisstrangeImg },
+    { id: 7, titulo: 'JSX Básico', conteudo: 'Sintaxe parecida com HTML dentro do JS.', exemplo: '<h1>Hello World</h1>', codigo: 'JSX001', capa: justdanceImg },
+    { id: 8, titulo: 'Expressões', conteudo: 'Permite usar variáveis dentro do JSX.', exemplo: '{nome}', codigo: 'JSX002', capa: lifeisstrangeImg },
+    { id: 9, titulo: 'Expressões', conteudo: 'Permite usar variáveis dentro do JSX.', exemplo: '{nome}', codigo: 'JSX002', capa: lifeisstrangeImg },
+    { id: 10, titulo: 'Expressões', conteudo: 'Permite usar variáveis dentro do JSX.', exemplo: '{nome}', codigo: 'JSX002', capa: lifeisstrangeImg },
+    { id: 11, titulo: 'Expressões', conteudo: 'Permite usar variáveis dentro do JSX.', exemplo: '{nome}', codigo: 'JSX002', capa: lifeisstrangeImg },
   ];
 
   const Components = [
-    { id: 1, titulo: 'Componentes Funcionais', conteudo: 'Funções que retornam JSX.', exemplo: 'function App() { return <h1>Oi</h1> }', codigo: 'COMP001', capa: simsImg },
-    { id: 2, titulo: 'Props', conteudo: 'Permite passar dados para componentes.', exemplo: '<Card titulo="React"/>', codigo: 'COMP002', capa: stardewImg },
+    { id: 12, titulo: 'Componentes Funcionais', conteudo: 'Funções que retornam JSX.', exemplo: 'function App() { return <h1>Oi</h1> }', codigo: 'COMP001', capa: simsImg },
+    { id: 13, titulo: 'Props', conteudo: 'Permite passar dados para componentes.', exemplo: '<Card titulo="React"/>', codigo: 'COMP002', capa: stardewImg },
+    { id: 14, titulo: 'Componentes Funcionais', conteudo: 'Funções que retornam JSX.', exemplo: 'function App() { return <h1>Oi</h1> }', codigo: 'COMP001', capa: simsImg },
+    { id: 15, titulo: 'Componentes Funcionais', conteudo: 'Funções que retornam JSX.', exemplo: 'function App() { return <h1>Oi</h1> }', codigo: 'COMP001', capa: simsImg },
+  
   ];
 
   const Hooks = [
-    { id: 1, titulo: 'useState', conteudo: 'Hook para gerenciar estado.', exemplo: 'const [count, setCount] = useState(0)', codigo: 'HOOK001', capa: animalcrossingImg },
-    { id: 2, titulo: 'useEffect', conteudo: 'Hook para efeitos colaterais.', exemplo: 'useEffect(() => {...}, [])', codigo: 'HOOK002', capa: overcookedImg },
+    { id: 27, titulo: 'useState', conteudo: 'Hook para gerenciar estado.', exemplo: 'const [count, setCount] = useState(0)', codigo: 'HOOK001', capa: animalcrossingImg },
+    { id: 28, titulo: 'useEffect', conteudo: 'Hook para efeitos colaterais.', exemplo: 'useEffect(() => {...}, [])', codigo: 'HOOK002', capa: overcookedImg },
+    { id: 29, titulo: 'useEffect', conteudo: 'Hook para efeitos colaterais.', exemplo: 'useEffect(() => {...}, [])', codigo: 'HOOK002', capa: overcookedImg },
+
   ];
 
   const Router = [
@@ -42,9 +50,10 @@ function App() {
     { id: 2, titulo: 'Link', conteudo: 'Componente para navegação.', exemplo: '<Link to="/about">Sobre</Link>', codigo: 'ROUT002', capa: hogwartsImg },
   ];
 
-  const StateManagement = [
-    { id: 1, titulo: 'Context API', conteudo: 'Gerencia estado global.', exemplo: '<Context.Provider>', codigo: 'STATE001', capa: simsImg },
-    { id: 2, titulo: 'Redux', conteudo: 'Biblioteca para estado global.', exemplo: 'store.dispatch(action)', codigo: 'STATE002', capa: stardewImg },
+  const Renderizacao = [
+    { id: 24, titulo: 'Context API', conteudo: 'Gerencia estado global.', exemplo: '<Context.Provider>', codigo: 'STATE001', capa: simsImg },
+    { id: 25, titulo: 'Redux', conteudo: 'Biblioteca para estado global.', exemplo: 'store.dispatch(action)', codigo: 'STATE002', capa: stardewImg },
+    { id: 26, titulo: 'Context API', conteudo: 'Gerencia estado global.', exemplo: '<Context.Provider>', codigo: 'STATE001', capa: simsImg },
   ];
 
   return (
@@ -65,7 +74,6 @@ function App() {
           </div>
         </div>
 
-        {/* FUNDAMENTOS */}
         <div id="fundamentos"><h1>FUNDAMENTOS</h1></div>
         <section className="Fundamentos-grid">
           {Fundamentos.map(item => (
@@ -106,9 +114,9 @@ function App() {
         </section>
 
         {/* STATE MANAGEMENT */}
-        <div id="state"><h1>STATE MANAGEMENT</h1></div>
-        <section className="State-grid">
-          {StateManagement.map(item => (
+        <div id="renderizacao"><h1>RENDERIZAÇÂO</h1></div>
+        <section className="renderizacao-grid">
+          {Renderizacao.map(item => (
             <CardJogo key={item.id} {...item} />
           ))}
         </section>

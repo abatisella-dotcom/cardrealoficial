@@ -104,6 +104,106 @@ body {
   position: relative;
 }
 
+#jsx {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #F68945;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.JSX-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+#components {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #FFEC72;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.Components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+#hooks {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #9745F6;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.Hooks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+#router {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #4e45f6;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.Router-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+#renderizacao {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #F64545;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.renderizacao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  position: relative;
+}
+
 
 
 .app-footer {
@@ -131,7 +231,7 @@ body {
   opacity: 1;
 }
 
-/* Responsividade refinada */
+/* Responsividade  */
 @media (max-width: 768px) {
   .app-header h1 {
     font-size: 6rem;
@@ -178,25 +278,8 @@ body {
   }
 }
 
-/* Scrollbar personalizada */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-::-webkit-scrollbar-track {
-  background: #1a1a2e;
-}
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #d4af37, #8a6d3b);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #e5c25f, #b8943f);
-}
-
-/* Animações suaves */
 @keyframes fadeInUp {
   from {
     opacity: 0;
