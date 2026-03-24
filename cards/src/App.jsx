@@ -87,6 +87,20 @@ function App() {
       </header>
 
       <main className="app-main">
+        
+      <div id="informacoes">
+        <div id='info'>
+          <h1>
+            INFO:
+          </h1>
+        </div>
+        <div id='frase1'>
+          <h1>
+            Este espaço funciona como um guia rápido e objetivo para apoiar seus <br />estudos e reforçar os fundamentos do React.
+          </h1>
+        </div>
+      </div>
+
 
         <section className="jogos-grid">
           {jogos.map(jogo => (
