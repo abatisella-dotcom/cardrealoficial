@@ -80,6 +80,8 @@ function App() {
     }
   ];
 
+
+  
   return (
     <div className="app">
       <header className="app-header">
@@ -106,6 +108,7 @@ function App() {
         <p>© 2024 Cards Makal - Todos os direitos reservados</p>
       </footer>
     </div>
+    
   );
 }
 
