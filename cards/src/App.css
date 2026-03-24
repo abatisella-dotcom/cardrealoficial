@@ -84,7 +84,18 @@ body {
   position: relative;
 }
 
-.jogos-grid {
+#fundamentos {
+  color: rgb(255, 255, 255);
+   font-family: "Anton SC", sans-serif;
+   background-color: #F64574;
+   text-align: center;
+   height: 100px;
+   width: 100%;
+   font-size: 35px;
+   letter-spacing: 9px;
+}
+
+.Fundamentos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -131,7 +142,7 @@ body {
     letter-spacing: 2px;
   }
 
-  .jogos-grid {
+  .fundamentos-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     padding: 10px;
@@ -156,7 +167,7 @@ body {
     font-size: 0.9rem;
   }
 
-  .jogos-grid {
+  .fundamentos-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
@@ -198,7 +209,7 @@ body {
   }
 }
 
-.card-jogo {
+.card-fundamento {
   animation: fadeInUp 0.6s ease-out;
   animation-fill-mode: both;
 }

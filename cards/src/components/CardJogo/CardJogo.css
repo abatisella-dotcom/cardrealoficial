@@ -5,7 +5,7 @@
   height: 420px;
   border-radius: 20px;
   overflow: hidden;
-  background: rgba(255, 181, 54, 0.95);
+  background:#F64574;
   backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
