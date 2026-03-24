@@ -14,12 +14,13 @@ import lifeisstrangeImg from './assets/imgs/lifeisstrange.jpeg';
 
 function App() {
   const Fundamentos = [
+HEAD,
     {
       id: 1,
       titulo: 'O que é React',
       conteudo: 'React é uma biblioteca JS para criar interfaces.',
       exemplo: 'Exemplo de uso',
-      codigo: ";",
+      codigo: "COD001",
       capa: stardewImg
     },
     {
@@ -65,6 +66,32 @@ function App() {
 
   ];
 
+  const JSX = [
+    { id: 1, titulo: 'JSX Básico', conteudo: 'Sintaxe parecida com HTML dentro do JS.', exemplo: '<h1>Hello World</h1>', codigo: 'JSX001', capa: justdanceImg },
+    { id: 2, titulo: 'Expressões', conteudo: 'Permite usar variáveis dentro do JSX.', exemplo: '{nome}', codigo: 'JSX002', capa: lifeisstrangeImg },
+  ];
+
+  const Components = [
+    { id: 1, titulo: 'Componentes Funcionais', conteudo: 'Funções que retornam JSX.', exemplo: 'function App() { return <h1>Oi</h1> }', codigo: 'COMP001', capa: simsImg },
+    { id: 2, titulo: 'Props', conteudo: 'Permite passar dados para componentes.', exemplo: '<Card titulo="React"/>', codigo: 'COMP002', capa: stardewImg },
+  ];
+
+  const Hooks = [
+    { id: 1, titulo: 'useState', conteudo: 'Hook para gerenciar estado.', exemplo: 'const [count, setCount] = useState(0)', codigo: 'HOOK001', capa: animalcrossingImg },
+    { id: 2, titulo: 'useEffect', conteudo: 'Hook para efeitos colaterais.', exemplo: 'useEffect(() => {...}, [])', codigo: 'HOOK002', capa: overcookedImg },
+  ];
+
+  const Router = [
+    { id: 1, titulo: 'React Router', conteudo: 'Biblioteca para navegação.', exemplo: '<Route path="/home" />', codigo: 'ROUT001', capa: unpackingImg },
+    { id: 2, titulo: 'Link', conteudo: 'Componente para navegação.', exemplo: '<Link to="/about">Sobre</Link>', codigo: 'ROUT002', capa: hogwartsImg },
+  ];
+
+  const StateManagement = [
+    { id: 1, titulo: 'Context API', conteudo: 'Gerencia estado global.', exemplo: '<Context.Provider>', codigo: 'STATE001', capa: simsImg },
+    { id: 2, titulo: 'Redux', conteudo: 'Biblioteca para estado global.', exemplo: 'store.dispatch(action)', codigo: 'STATE002', capa: stardewImg },
+  ];
+
+
   return (
     <div className="app">
       <header className="app-header">
@@ -72,41 +99,65 @@ function App() {
       </header>
 
       <main className="app-main">
-        
-      <div id="informacoes">
-        <div id='info'>
-          <h1>
-            INFO:
-          </h1>
-        </div>
-        <div id='frase1'>
-          <h1>
-            Este espaço funciona como um guia rápido e objetivo para apoiar seus <br />estudos e reforçar os fundamentos do React.
-          </h1>
-        </div>
-      </div>
-
-        <div id="fundamentos">
-          <h1>FUNDAMENTOS</h1>
+        <div id="informacoes">
+          <div id='info'>
+            <h1>INFO:</h1>
+          </div>
+          <div id='frase1'>
+            <h1>
+              Este espaço funciona como um guia rápido e objetivo para apoiar seus <br />estudos e reforçar os fundamentos do React.
+            </h1>
+          </div>
         </div>
 
+        {/* FUNDAMENTOS */}
+        <div id="fundamentos"><h1>FUNDAMENTOS</h1></div>
         <section className="Fundamentos-grid">
-          {Fundamentos.map(Fundamento => (
-            <CardJogo
-              key={Fundamento.id}
-              capa={Fundamento.capa}
-              titulo={Fundamento.titulo}
-              conteudo={Fundamento.conteudo}
-              exemplo={Fundamento.exemplo}
-              codigo={Fundamento.codigo}
-            />
+          {Fundamentos.map(item => (
+            <CardJogo key={item.id} {...item} />
+          ))}
+        </section>
+
+        {/* JSX */}
+        <div id="jsx"><h1>JSX</h1></div>
+        <section className="JSX-grid">
+          {JSX.map(item => (
+            <CardJogo key={item.id} {...item} />
+          ))}
+        </section>
+
+        {/* COMPONENTS */}
+        <div id="components"><h1>COMPONENTS</h1></div>
+        <section className="Components-grid">
+          {Components.map(item => (
+            <CardJogo key={item.id} {...item} />
+          ))}
+        </section>
+
+        {/* HOOKS */}
+        <div id="hooks"><h1>HOOKS</h1></div>
+        <section className="Hooks-grid">
+          {Hooks.map(item => (
+            <CardJogo key={item.id} {...item} />
+          ))}
+        </section>
+
+        {/* ROUTER */}
+        <div id="router"><h1>ROUTER</h1></div>
+        <section className="Router-grid">
+          {Router.map(item => (
+            <CardJogo key={item.id} {...item} />
+          ))}
+        </section>
+
+        {/* STATE MANAGEMENT */}
+        <div id="state"><h1>STATE MANAGEMENT</h1></div>
+        <section className="State-grid">
+          {StateManagement.map(item => (
+            <CardJogo key={item.id} {...item} />
           ))}
         </section>
       </main>
-
-      <footer className="app-footer">
-        <p>© 2024 Cards Makal - Todos os direitos reservados</p>
-      </footer>
     </div>
   );
 }
