@@ -11,6 +11,7 @@ import unpackingImg from './assets/imgs/unpacking.jpeg';
 import hogwartsImg from './assets/imgs/hogwarts legacy.jpeg';
 import justdanceImg from './assets/imgs/jusdance.jpg';
 import lifeisstrangeImg from './assets/imgs/lifeisstrange.jpeg';
+import reactImg from './assets/imgs/react.png';
 
 function App() {
   const Fundamentos = [
@@ -18,7 +19,7 @@ function App() {
       conteudo: 'React é uma biblioteca JS para criar interfaces.', 
       codigo: "", 
       capa: stardewImg },
-    { id: 2, titulo: 'The Sims 4', conteudo: 'Simulação de Vida', exemplo: 'Gratuito', codigo: 'COD002', capa: simsImg },
+    { id: 2, titulo: 'The Sims 4', conteudo: 'Simulação de Vida', exemplo: 'Gratuito', codigo: 'COD002', capa: reactImg },
     { id: 3, titulo: 'Animal Crossing', conteudo: 'Simulação / Casual', exemplo: '199.90', codigo: 'COD003', capa: animalcrossingImg },
     { id: 4, titulo: 'Overcooked 2', conteudo: 'Cooperativo / Party Game', exemplo: '49.90', codigo: 'COD004', capa: overcookedImg },
     { id: 5, titulo: 'Unpacking', conteudo: 'Puzzle / Relaxante', exemplo: '59.90', codigo: 'COD005', capa: unpackingImg },
