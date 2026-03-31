@@ -122,7 +122,7 @@ function App() {
         </section>
 
                 {/* PROPS */}
-        <div id="props"><h1>PROPS</h1></div>
+        <div id="props"><h1>PROPS</h1></div>  
         <section className="Props-grid">
           {Props.map(item => (
             <CardJogo key={item.id} {...item} />
