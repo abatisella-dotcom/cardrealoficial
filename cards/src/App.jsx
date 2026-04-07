@@ -11,6 +11,7 @@ import unpackingImg from './assets/imgs/unpacking.jpeg';
 import hogwartsImg from './assets/imgs/hogwarts legacy.jpeg';
 import justdanceImg from './assets/imgs/jusdance.jpg';
 import lifeisstrangeImg from './assets/imgs/lifeisstrange.jpeg';
+import reactImg from './assets/imgs/react.png';
 
 function App() {
   const Fundamentos = [
